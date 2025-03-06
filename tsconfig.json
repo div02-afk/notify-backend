@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    // "target": "ESNext",
+    "target": "es6",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types", "src/types"],
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"],
+      "src/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
